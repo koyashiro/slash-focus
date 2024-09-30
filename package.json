@@ -1,8 +1,21 @@
 {
   "name": "slash-focus",
-  "description": "Press the slash key to focus on a specific text box.",
   "version": "0.1.0",
+  "description": "Press the slash key to focus on a specific text box.",
   "type": "module",
+  "keywords": [
+    "chrome"
+  ],
+  "homepage": "https://github.com/koyashiro/slash-focus#README",
+  "bugs": {
+    "url": "https://github.com/koyashiro/slash-focus/issues"
+  },
+  "license": "MIT",
+  "author": "koyashiro",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/koyashiro/slash-focus.git"
+  },
   "scripts": {
     "build": "tsc --noEmit && rollup -c",
     "lint": "eslint",
@@ -10,9 +23,6 @@
     "format:check": "prettier --check .",
     "archive": "cd dist && zip -r ../slash-focus.zip ."
   },
-  "keywords": [],
-  "author": "koyashiro",
-  "license": "MIT",
   "devDependencies": {
     "@eslint/js": "9.11.1",
     "@rollup/plugin-terser": "0.4.4",
@@ -26,5 +36,9 @@
     "tslib": "2.7.0",
     "typescript": "5.6.2",
     "typescript-eslint": "8.7.0"
+  },
+  "volta": {
+    "node": "20.17.0",
+    "npm": "10.8.3"
   }
 }
