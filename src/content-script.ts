@@ -13,18 +13,19 @@ import { hostConfigs } from "./host-configs";
       return;
     }
 
+    const activeElement = document.activeElement;
+    if (
+      activeElement instanceof HTMLInputElement ||
+      activeElement instanceof HTMLTextAreaElement ||
+      (activeElement instanceof HTMLElement && activeElement.isContentEditable)
+    ) {
+      return;
+    }
+
     const inputElement = document.querySelector<HTMLInputElement>(
       hostConfig.query,
     );
     if (!inputElement) {
-      return;
-    }
-
-    if (
-      inputElement == document.activeElement ||
-      document.activeElement instanceof HTMLInputElement ||
-      document.activeElement instanceof HTMLTextAreaElement
-    ) {
       return;
     }
 
