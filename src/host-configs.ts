@@ -14,9 +14,6 @@ export const hostConfigs: HostConfigs = {
   "mail.google.com": {
     query: '#aso_search_form_anchor input[type="text"]',
   },
-  "nitori-net.jp": {
-    query: "#productSuggestSearchBoxInput",
-  },
   "open.spotify.com": {
     query: 'form[role="search"] input[type="search"]',
   },
