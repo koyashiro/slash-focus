@@ -30,7 +30,7 @@
     "eslint": "9.39.5",
     "globals": "17.14.0",
     "prettier": "3.10.1",
-    "rollup": "4.68.2",
+    "rollup": "4.68.3",
     "rollup-plugin-copy": "3.5.0",
     "rollup-plugin-delete": "3.0.2",
     "tslib": "2.9.1",
